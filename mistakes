@@ -1,0 +1,2 @@
+1.tailwind colors not visible,added .postcss outside of the project folder,remove node_modules and install
+2.httpmmodule not imported in app.conig.ts
