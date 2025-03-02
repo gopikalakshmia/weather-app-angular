@@ -1,7 +1,6 @@
-<div className="bg-sky-200  w-sm text-center justify-self-center -mt-4">
-<div class=" font-semibold p-1 text-left">
-<div *ngFor="let item of cityValue,let i=index">
-<button >{{item.name+" "+item.state+" "+item.country}}</button>
+
+<div *ngFor="let item of cityValue,let i=index" class=" font-semibold p-1 text-left bg-sky-200  w-sm  justify-self-center" [hidden]="!dropdownVisibilit">
+<button (click)="handleClick(item)">{{item.name+" , "+item.state+" , "+item.country}}</button>
 </div>
-</div>
-</div>
+
+
