@@ -13,7 +13,7 @@ export class DisplayweatherComponent implements OnInit {
 private apiService=inject(ApiserviceService);
 weather:any;
 ngOnInit() {
-this.apiService.onCitySelectedEvent.subscribe((data)=>{this.weather=data},(error)=>console.log(error))
+this.apiService.data$.subscribe((data)=>{this.weather=data},(error)=>console.log(error))
 }
 
 }
