@@ -1,3 +1,52 @@
 <div *ngIf="weather">
-<h1>{{weather.main.temp}}</h1>
+  <div>
+    <div class=" fixed top-1/5 left-1/4  font-sans p-20 shadow-2xl  w-1/2  rounded-4xl  bg-white/20">
+      <!-- <div class='justify-self-end'><TempToggle/></div> -->
+
+      <div class="flex flex-row">
+        <div class="w-1/2">
+          <div class="p-2.5">
+            <h2 class="text-blue-900 font-bold">CURRENT WEATHER</h2>
+            <h2 class="text-sm text-blue-900">
+              {{dateToday}}
+            </h2>
+            <h2 class="font-extrabold">{{weather.name}}</h2>
+          </div>
+
+          <div class="flex flex-row p-2.5">
+            <div class="">
+              <img [src]="`https://openweathermap.org/img/wn/${weather.weather[0].icon}.png`"
+                alt="current-weather-icon-image" class="size-25" />
+              <p class="font-bold text-xs text-center">{{weather.weather[0].description}}</p>
+            </div>
+            <div class=" font-light ">
+              <p>
+                <span class="text-9xl text-blue-950 font-light">
+                  {{weather.main.temp|number:'1.0-0'}}
+                </span>
+                <span class="">°C</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col w-1/2 p-5  text-lg font-medium ">
+          <div class="pt-1 p-4 font-semibold text-blue-800">
+            <p> {{`Feels like ${weather.main.feels_like|number:'1.0-0'}`}}</p>
+
+          </div>
+          <div class='flex flex-row'>
+            <app-icon-display [icon]="faTemperatureArrowUp" [identifier]="''"
+              [value]="weather.main.temp_min+'°C'"  />
+            <app-icon-display [icon]="faTemperatureArrowDown" [identifier]="''"
+              [value]="weather.main.temp_max+'°C'"  />
+          </div>
+          <app-icon-display [icon]="faWaterIcon" [identifier]="'Humidity'" [value]="weather.main.humidity+' %'" />
+          <app-icon-display [icon]="faWind" [identifier]="'Wind'" [value]="weather.wind.speed +'m/s'" />
+          <app-icon-display [icon]="faCloud" [identifier]="'Cloud'" [value]="weather.clouds.all+' %'"  />
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>

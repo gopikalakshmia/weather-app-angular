@@ -1,0 +1,7 @@
+
+<div class=" flex flex-row p-3 text-sm text-blue-800">
+  <ng-container *ngIf="icon"><fa-icon [icon]="icon" size="2x" class='pr-5'></fa-icon></ng-container>
+  <ng-container *ngIf="identifier"><p class='align-middle text-xl font-light pr-5'>{{identifier}} </p></ng-container>
+    <p class='align-middle text-xl font-light'>{{value}}</p>
+  </div>
+
