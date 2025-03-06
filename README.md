@@ -16,49 +16,39 @@ Features 🚀
 
 Tech Stack 🛠
 
-Angular – Component-based framework
+  Angular – Component-based framework
 
-RxJS – Handling asynchronous data streams
+  RxJS – Handling asynchronous data streams
 
-Angular Services – API calls & logic separation 
+  Angular Services – API calls & logic separation 
 
-OpenWeather API – Fetch weather data
+  OpenWeather API – Fetch weather data
 
-Angular Material – UI components for a responsive design
-AAA
 Installation & Setup ⚙️
 
-Clone the repository:
-
-
-Copy
-Edit
-git clone https://github.com/gopikalakshmia/weather-app-angular.git
-cd weather-app-angular
-Install dependencies:
-
-sh
-Copy
-Edit
-npm install
-Create a enviorment file in the root directory and add your API keys:
-
-sh
-Copy
-Edit
-apiKey=your_api_key_here
- geminiApiKey=your_api_key_here
+  Clone the repository:
+    
+  git clone https://github.com/gopikalakshmia/weather-app-angular.git
+  
+  cd weather-app-angular
+  
+  Install dependencies:
+  
+    npm install
+    
+  Create a enviorment file in the root directory and add your API keys:
+  
+    apiKey=your_api_key_here
+     geminiApiKey=your_api_key_here
+     
 Start the development server:
 
-sh
-Copy
-Edit
-ng serve
+  ng serve
+  
 Open the app in your browser:
 
-sh
-Copy
-Edit
 http://localhost:4200/
+
 Contributing 🤝
+
 Feel free to fork the repo, open issues, or submit PRs to improve the project!
