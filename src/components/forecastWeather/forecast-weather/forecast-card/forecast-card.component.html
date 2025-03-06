@@ -1,9 +1,9 @@
-<div class="p-3  justify-self-center shadow-2xl m-5 w-35 rounded-lg text-center bg-white/50" *ngIf="forecastDay">
+<div class="p-3  justify-self-center shadow-2xl m-5 w-35 rounded-lg text-center bg-black/10" *ngIf="forecastDay">
   <h1 class="font-bold">{{day}}</h1>
   <img [src]="`https://openweathermap.org/img/wn/${forecastDay.icon}.png`" [alt]="'weather-icon-image'"
     class="size-15 justify-self-center" />
   <ng-container *ngIf="forecastDay.description">
     <p class="font-bold text-xs text-bold">{{forecastDay.description}}</p>
   </ng-container>
-  <p class=""> {{(forecastDay.temp_max|number)+" °C"}}</p>
+  <p class=""> {{(forecastDay.temp_max|number:'1.0-0')+" °C"}}/{{(forecastDay.temp_min|number:'1.0-0')+" °C"}}</p>
 </div>

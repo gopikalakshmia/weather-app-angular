@@ -19,7 +19,6 @@ day:any;
 
 ngOnInit(): void {
   this.day=new Date(this.dateforecast).toLocaleDateString("en-US",{weekday:"long"});
-  console.log(this.forecastDay)
 }
 
 }

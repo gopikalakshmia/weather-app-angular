@@ -48,7 +48,7 @@ export class ForecastWeatherComponent implements OnInit {
         }
       });
 
-    console.log(Object.entries(dailyData).slice(0, 5));
+
     return Object.entries(dailyData).slice(1, 5);
   }
 }
