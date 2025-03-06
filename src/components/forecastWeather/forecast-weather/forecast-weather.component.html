@@ -1,6 +1,6 @@
 
-<ng-container *ngIf="forecastWeather">
-  <div class="fixed top-[75%]  flex flex-row" *ngFor="let item of forecastWeather">
+<div class="fixed top-[75%] left-1/4  justify-self-center flex flex-row"  *ngIf="forecastWeather">
+  <div *ngFor="let item of forecastWeather">
   <app-forecast-card [dateforecast]="item[0]" [forecastDay]="item[1]"></app-forecast-card>
   </div>
-</ng-container>
+</div>
