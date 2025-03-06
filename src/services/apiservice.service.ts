@@ -36,7 +36,7 @@ forecastData$:Observable<any>=this.forecastSubject.asObservable();
   getForecastWeather(coordinates:{lat:0,lon:0}){
     const api = `https://api.openweathermap.org/data/2.5/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&units=metric&appid=${this.apiKey}`;
     const data=this.http.get(api).subscribe(
-      (data)=>{this.forecastSubject.next(data)},
+      (data)=>{this.forecastSubject.next(data);console.log(data);},
         (error)=>{console.log("Error fetching forecast weather data")}
 
     )

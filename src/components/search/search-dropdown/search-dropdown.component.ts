@@ -27,6 +27,7 @@ ngOnChanges(changes: SimpleChanges): void {
 handleClick(city:any){
 this.dropdownVisibilit=false;
 this.cityApi.getWeatherData({lat:city.lat,lon:city.lon});
+this.cityApi.getForecastWeather({lat:city.lat,lon:city.lon});
 }
 
 }
