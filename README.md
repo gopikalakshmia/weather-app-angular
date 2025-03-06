@@ -15,15 +15,22 @@ Features 🚀
 ✅ AI-generated Summary – Powered by Gemini AI Integration.
 
 Tech Stack 🛠
+
 Angular – Component-based framework
+
 RxJS – Handling asynchronous data streams
+
 Angular Services – API calls & logic separation 
+
 OpenWeather API – Fetch weather data
+
 Angular Material – UI components for a responsive design
+AAA
 Installation & Setup ⚙️
+
 Clone the repository:
 
-sh
+
 Copy
 Edit
 git clone https://github.com/gopikalakshmia/weather-app-angular.git
